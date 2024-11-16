@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+/*----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poiret One", sans-serif;
+}
+
+/*--SEPARADOR--*/
+
+.separador {
+    color: white;
+    font-size: 30px;
+    background-color: #C6951A;
+    text-align: center;
+    padding: 50px;
+}
+
+.separador a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/*!----HEADER----*/
+
+header{
+    background-color: #213B30;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 10px 5px 10px 5px;/*--del bolde hacia afuera--*/
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #C6951A;
+    font-weight: 700;
+    font-size: 20px;
+}
+header nav ul li a:hover{
+    color: white;
+}
+
+/*!----FOOTER----*/
+
+footer {
+    background-color: #213B30;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+footer img{
+    width: 150px;
+    height: 150px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer div div{
+    display: flex;
+    flex-direction: row;
+}
+footer div h3{
+    color: #C6951A;
+}
+footer div div a{
+    text-decoration: none;
+    color:#C6951A;
+    font-size: 17px;
+    padding-left: 10px;
+}
+footer div div img{
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+footer a img{
+    width: 70px;
+    height: 70px;
+}
+
+/*--boton de whatsapp que nos sigue--*/
+
+.fixed {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+.fixed img{
+    width: 70px;
+    height: 70px
+}
+
+
+/*!----MAIN-INDEX----*/
+
+.hero{
+    height: 90vh;
+}
+.hero h2{
+    font-size: 50px;
+
+}
+
+.vercarta{
+    height: 90vh;
+    background-color: #213B30;
+    text-align: center;
+}
+
+.grid-galery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+}
+.vercarta div a{
+    border: 2px solid #C6951A;
+    color: #C6951A;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+.vercarta div a:hover{
+    background-color: #C6951A;
+    color: #213B30;
+}
+
+.reserva{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.reserva div{
+    height: 100px;
+    width: 50%;
+}
+.reserva h3{
+    font-size: 25px;
+}
+.reserva div p{
+    font-size: 20px;
+}
+.reserva div a{
+    border: 2px solid #C6951A;
+    color: #C6951A;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+.reserva div a:hover{
+    background-color: #C6951A;
+    color: white;
+}
+
+
+.direccion{
+    height: 90vh;
+    display: flex;
+}
+.izquierdad{
+    flex: 1;
+    background-color: #213B30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.derechad{
+    flex: 1;
+    background-image: url(../img/ubicacion-index.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.direccion div p{
+    font-size: 20px;
+}
+.direccion div iframe{
+    margin: 10px;
+}
+
+.quienessomosi{
+    height: 90vh;
+    display: flex;
+}
+.izquierdaq{
+    flex: 1;
+    background-image: url(../img/quienes-somos-index.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.derechaq{
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienessomosi div a{
+    border: 2px solid #213B30;
+    color: #213B30;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    background-color: #C6951A;
+}
+.quienessomosi div a:hover{
+    background-color: white;
+    color: #C6951A;
+}
+
+/*!----MAIN-LACARTA----*/
+
+.la-carta{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.carta{
+    border: 2px solid black;
+    padding: 40px;
+}
+
+
+/*!----MAIN-QUIENESSOMOS----*/
+
+.quienessomos{
+    display: flex;
+    height: 90vh;
+}
+.izquierda{
+    flex: 1;
+    background-image: url(../img/quienes-somos1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container div h3{
+    font-size: 25px;
+}
+.derecha{
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.derecha p{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+.quienessomos1{
+    display: flex;
+    height: 90vh;
+}
+.izquierda1{
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.izquierda1 p{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.izquierda1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.derecha1{
+    flex: 1;
+    background-image: url(../img/quienes-somos3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienessomos2{
+    display: flex;
+    height: 90vh;
+}
+.izquierda2{
+    flex: 1;
+    background-image: url(../img/quienes-somos2.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.derecha2{
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.derecha2 p{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.derecha2 a{
+    border: 2px solid #C6951A;
+    color: #C6951A;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.derecha2 a:hover{
+    background-color: #C6951A;
+    color: white;
+}
+
+
+/*!----MAIN-RESERVAS----*/
+
+
