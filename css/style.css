@@ -135,24 +135,32 @@ footer a img{
 /*!----MAIN-INDEX----*/
 
 .hero{
-    height: 90vh;
-}
-.hero h2{
-    font-size: 50px;
-
+    height: 80vh;
 }
 
 .vercarta{
-    height: 90vh;
+    height: 80vh;
     background-color: #213B30;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.owl-container{
+    padding-top: 40px;
+}
+.item{
+    background-color: gainsboro;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.item img{
+ border-radius: 10px;
 }
 
-.grid-galery{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
-}
 .vercarta div a{
     border: 2px solid #C6951A;
     color: #C6951A;
