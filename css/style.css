@@ -59,6 +59,19 @@ header nav ul li a:hover{
     color: white;
 }
 
+.dropdown{
+    display: none;
+}
+.dropdown button{
+    color:#C6951A;
+    background-color: #213B30;
+}
+.dropdown-menu{
+    background-color: #213B30;
+}
+.btn:hover {
+    background-color: #213B30;
+}
 /*!----FOOTER----*/
 
 footer {
@@ -269,6 +282,7 @@ footer a img{
     padding-bottom: 40px;
 }
 .carta{
+    width: 90%;
     border: 2px solid black;
     padding: 40px;
 }
@@ -391,3 +405,72 @@ footer a img{
 /*!----MAIN-RESERVAS----*/
 
 
+/*!--MEDIA QUERIES--*/
+@media screen and (max-width: 767px) {
+    .dropdown{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    header{
+        align-items: center;
+        padding: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+}
+}
+@media screen and (max-width: 616px) {
+    
+}
+@media screen and (max-width:450px){
+    .carta{
+        border: 2px solid black;
+        padding: 10px;
+    }
+    footer {
+        background-color: #213B30;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    footer img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    footer div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer div div{
+        display: flex;
+        flex-direction: row;
+    }
+    footer div h3{
+        color: #C6951A;
+    }
+    footer div div a{
+        text-decoration: none;
+        color:#C6951A;
+        font-size: 17px;
+        padding-left: 10px;
+    }
+    footer div div img{
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+    }
+    footer a img{
+        width: 50px;
+        height: 50px;
+    }
+}
