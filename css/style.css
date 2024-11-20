@@ -492,6 +492,12 @@ footer a img{
 
 
 /*!--MEDIA QUERIES--*/
+@media screen and (max-width: 1350px) {
+    .quienessomos {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 1172px) {
     .hero {
         width: 100%;
@@ -526,11 +532,11 @@ footer a img{
     .reserva div {
         width: 80%;
     }
-
-    .quienessomos {
-        flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+    .quienessomos1 {
+        flex-direction:column-reverse;
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -553,7 +559,7 @@ footer a img{
     }
 
     .vercarta {
-        min-height: 60vh; /* Reduce la altura mínima en pantallas pequeñas */
+        min-height: 60vh;
     }
 
     .item {
@@ -566,24 +572,24 @@ footer a img{
 
     .reserva {
         display: flex;
-        flex-direction: column; /* Cambia a una sola columna */
-        align-items: center; /* Centra el contenido horizontalmente */
-        justify-content: center; /* Centra el contenido verticalmente */
-        text-align: center; /* Centra el texto */
-        padding: 20px; /* Ajusta el espacio interno */
-        gap: 20px; /* Añade espacio entre los elementos */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
     }
 
 
     .reserva h3 {
-        font-size: 24px; /* Ajusta el tamaño del título */
-        margin-bottom: 10px; /* Espaciado inferior */
+        font-size: 24px;
+        margin-bottom: 10px;
     }
     .reserva p {
-        font-size: 16px; /* Tamaño del texto */
-        line-height: 1.5; /* Mejora la legibilidad */
-        max-width: 100%; /* Asegura que el párrafo ocupe todo el ancho */
-        margin: 0 0 10px 0; /* Espaciado inferior */
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 100%;
+        margin: 0 0 10px 0;
     }
     .reserva div a{
         margin-top: 100px ;   
@@ -597,8 +603,19 @@ footer a img{
         flex: 1 1 100%;
         width: 100%;
     }
+
+    .derecha p, .izquierda1 p, .derecha2 p, .izquierda1 ul li a {
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
 }
 
+@media screen and (max-width: 582px) {
+    .quienessomos2{
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 480px) {
     h1 {
@@ -610,7 +627,7 @@ footer a img{
     }
 
     .item img {
-        max-width: 100px; /* Ajusta aún más en dispositivos muy pequeños */
+        max-width: 100px;
     }
 
     .fixed img {
@@ -627,10 +644,6 @@ footer a img{
     footer img {
         width: 80px;
         height: 80px;
-    }
-
-    .quienessomos, .quienessomos1, .quienessomos2 {
-        flex-direction: column;
     }
 
     .reserva div {
@@ -650,8 +663,6 @@ footer a img{
     }
 
 }
-
-
 
 @media screen and (max-width:450px){
     .carta{
