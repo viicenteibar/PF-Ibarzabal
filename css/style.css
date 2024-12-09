@@ -488,7 +488,70 @@ footer a img{
 }
 
 
-/*!----MAIN-RESERVAS----*/
+/*!----MAIN-CONTACTO----*/
+
+form{
+    padding: 80px;
+
+}
+
+.grid{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "nombre apellido mail"
+    "telefono pais ."
+    "comentarios comentarios comentarios"
+    ;
+}
+.nombre { 
+    grid-area: nombre; 
+}
+.apellido {
+    grid-area: apellido;
+}
+.mail {
+    grid-area: mail;
+}
+.telefono {
+    grid-area: telefono;
+}
+.pais {
+    grid-area: pais;
+}
+.comentarios {
+    grid-area: comentarios;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+
+}
+
+.mb-3{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+form div button{
+    border: 2px solid #C6951A;
+    color: #C6951A;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+form div button:hover{
+    background-color: #C6951A;
+    color: white;
+}
 
 
 /*!--MEDIA QUERIES--*/
@@ -509,6 +572,19 @@ footer a img{
         margin: 0 auto;
     }
 
+    .grid{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "nombre apellido"
+        "mail telefono"
+        "pais ."
+        "comentarios comentarios"
+        ;
+    }
 }
 @media screen and (max-width: 1150px) {
     .direccion div iframe {
@@ -609,6 +685,25 @@ footer a img{
         font-size: 16px;
         line-height: 1.4;
     }
+
+    form{
+        padding: 40px;
+    }
+    .grid{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "nombre"
+        "apellido"
+        "mail"
+        "telefono"
+        "pais"
+        "comentarios"
+        ;
+    }
 }
 
 @media screen and (max-width: 582px) {
@@ -673,6 +768,9 @@ footer a img{
         flex-direction: column;
     }
 
+    form{
+        padding: 10px;
+    }
 }
 
 @media (max-width: 768px) {
