@@ -1,0 +1,40 @@
+header {
+  background-color: #213B30;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 10px 5px 10px 5px; /*--del bolde hacia afuera--*/
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #C6951A;
+  font-weight: 700;
+  font-size: 20px;
+}
+header nav ul li a:hover {
+  color: white;
+}
+header nav .dropdown {
+  display: none;
+}
+header nav .dropdown button {
+  color: #C6951A;
+  background-color: #213B30;
+}
+header nav .dropdown button .btn:hover {
+  background-color: #213B30;
+}
+header nav .dropdown button .dropdown-menu {
+  background-color: #213B30;
+}
+
+/*# sourceMappingURL=estilos.css.map */
