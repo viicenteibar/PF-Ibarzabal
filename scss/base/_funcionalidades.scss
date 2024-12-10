@@ -1,28 +1,55 @@
-//* VARIABLES
+//* VARIABLES clase SASS I
 $color-1: #213B30;
 $color-2: #C6951A;
 $color-3: black;
 $color-4: white;
 
-//* LISTAS
 
-//* OPERACIONES
-
-//* MAPAS
-
-//* EXTEND clase SASS II
+//* EXTEND
 %boton1{
-
+    border: 2px solid $color-2;
+    color: $color-2;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    &:hover{
+        background-color: $color-2;
+        color: $color-1;
+    }
 }
 %boton2{
-
+    border: 2px solid $color-2;
+    color: $color-2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    &:hover{
+        background-color: $color-2;
+        color: $color-4;
+    }
 }
 %boton3{
-
+    border: 2px solid $color-1;
+    color: $color-1;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    background-color: $color-2;
+    &:hover{
+        background-color: $color-4;
+        color: $color-2;
+    }
 }
 
-//* MIXIN clase SASS II
-
-
-
-//* SEPARADOR

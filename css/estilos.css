@@ -1,5 +1,54 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+main .vercarta div a {
+  border: 2px solid #C6951A;
+  color: #C6951A;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+main .vercarta div a:hover {
+  background-color: #C6951A;
+  color: #213B30;
+}
+
+main form .boton button, main .quienessomos2 .derecha2 a, main .reserva div a {
+  border: 2px solid #C6951A;
+  color: #C6951A;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+main form .boton button:hover, main .quienessomos2 .derecha2 a:hover, main .reserva div a:hover {
+  background-color: #C6951A;
+  color: white;
+}
+
+main .quienessomosi .izquierdaq a {
+  border: 2px solid #213B30;
+  color: #213B30;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  background-color: #C6951A;
+}
+main .quienessomosi .izquierdaq a:hover {
+  background-color: white;
+  color: #C6951A;
+}
+
 /*----*/
 * {
   margin: 0;
@@ -159,21 +208,6 @@ main .vercarta .owl-container .item img {
   border-radius: 10px;
   object-fit: cover;
 }
-main .vercarta div a {
-  border: 2px solid #C6951A;
-  color: #C6951A;
-  background-color: transparent;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-}
-main .vercarta div a:hover {
-  background-color: #C6951A;
-  color: #213B30;
-}
 main .reserva {
   display: flex;
   height: 90vh;
@@ -196,21 +230,6 @@ main .reserva div p {
 main .reserva div {
   height: 100px;
   width: 50%;
-}
-main .reserva div a {
-  border: 2px solid #C6951A;
-  color: #C6951A;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-}
-main .reserva div a:hover {
-  background-color: #C6951A;
-  color: white;
 }
 main .direccion {
   height: 90vh;
@@ -263,22 +282,6 @@ main .quienessomosi .izquierdaq {
 main .quienessomosi .izquierdaq p {
   font-size: 20px;
   color: white;
-}
-main .quienessomosi .izquierdaq a {
-  border: 2px solid #213B30;
-  color: #213B30;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  border-radius: 5px;
-  background-color: #C6951A;
-}
-main .quienessomosi .izquierdaq a:hover {
-  background-color: white;
-  color: #C6951A;
 }
 main .quienessomosi .derechaq {
   flex: 1;
@@ -399,22 +402,6 @@ main .quienessomos2 .derecha2 p {
   padding-left: 80px;
   padding-right: 80px;
 }
-main .quienessomos2 .derecha2 a {
-  border: 2px solid #C6951A;
-  color: #C6951A;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-}
-main .quienessomos2 .derecha2 a:hover {
-  background-color: #C6951A;
-  color: white;
-}
-
 /*!----MAIN-CONTACTO----*/
 main form {
   padding: 80px;
@@ -453,22 +440,6 @@ main form .boton {
   display: flex;
   justify-content: center;
 }
-main form .boton button {
-  border: 2px solid #C6951A;
-  color: #C6951A;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-}
-main form .boton button:hover {
-  background-color: #C6951A;
-  color: white;
-}
-
 footer {
   background-color: #213B30;
   height: 200px;
