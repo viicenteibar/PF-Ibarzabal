@@ -183,16 +183,10 @@ footer a img{
     justify-content: center;
     align-items: center;
 }
-.hero .item {
+.owl-container .item {
     width: 100%;
     height: auto; 
     overflow: hidden;
-}
-
-.hero .item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .vercarta {
@@ -207,11 +201,7 @@ footer a img{
     overflow: hidden; /* Evita desbordamientos */
     padding: 20px;
 }
-.owl-container {
-    width: 100%; /* Ajusta al 100% del contenedor */
-    max-width: 1200px; /* Evita que sea más ancho que un límite razonable */
-    padding: 20px;
-}
+
 .item {
     display: flex;
     flex-direction: column;

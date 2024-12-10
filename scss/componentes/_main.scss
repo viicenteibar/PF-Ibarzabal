@@ -1,0 +1,424 @@
+/*!----MAIN-INDEX----*/
+main{
+    .hero{
+        .carousel {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            height: 100vh;
+            overflow: hidden;
+            .carousel-inner{
+                margin: 0;
+                padding: 0;
+                width: 100% !important;
+                height: 100vh;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                .carousel-item{
+                    margin: 0;
+                    padding: 0;
+                    width: 100% !important;
+                    height: 100vh;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .carousel-control-prev{
+                z-index: 1;
+            }
+            .carousel-control-next{
+                z-index: 1;
+            }
+        }
+    }
+    .vercarta{
+        height: auto; /* Permite ajustar la altura según el contenido */
+        min-height: 80vh; /* Asegura que tenga al menos el 80% de la altura de la pantalla */
+        background-color: #213B30;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        overflow: hidden; /* Evita desbordamientos */
+        padding: 20px;
+        .owl-container{
+            width: 100%;
+            max-width: 100%; /* o 1200px PROBAR */
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: gainsboro;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 10px;
+                text-align: center;
+                width: 100%;
+                height: auto; 
+                overflow: hidden;
+                img{
+                    width: 100%; /* Ajusta al ancho del contenedor */
+                    max-width: 300px; /* Evita que sea más grande de lo necesario */
+                    height: auto; /* Mantén la proporción de la imagen */
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+        }
+        div{
+            a{
+                border: 2px solid #C6951A;
+                color: #C6951A;
+                background-color: transparent;
+                padding: 10px 20px;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 10px;
+                &:hover{
+                    background-color: #C6951A;
+                    color: #213B30;
+                }
+            }
+        }
+    }
+    .reserva{
+        display: flex;
+        height: 90vh;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        min-height: 80vh;
+        div{
+            height: 100px;
+            width: 50%;
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        div{
+            height: 100px;
+            width: 50%;
+            a{
+                border: 2px solid #C6951A;
+                color: #C6951A;
+                border-radius: 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 10px;
+                &:hover{
+                    background-color: #C6951A;
+                    color: white;
+                }
+            }
+        }
+    }
+    .direccion{
+        height: 90vh;
+        display: flex;
+        .izquierdad{
+            flex: 1;
+            background-color: #213B30;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-size: 20px;
+                color: #C6951A;
+            }
+            iframe{
+                margin: 10px;
+
+            }
+        }
+        .derechad{
+            flex: 1;
+            background-image: url(../img/ubicacion-index.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-size: 20px;
+
+            }
+        }
+    }
+    .quienessomosi{
+        height: 90vh;
+        display: flex;
+        .izquierdaq{
+            flex: 1;
+            background-image: url(../img/quienes-somos-index.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-size: 20px;
+                color: white;
+            }
+            a{
+                border: 2px solid #213B30;
+                color: #213B30;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                font-family: Arial, sans-serif;
+                border-radius: 5px;
+                background-color: #C6951A;
+                &:hover{
+                    background-color: white;
+                    color: #C6951A;
+                }
+            }
+        }
+        .derechaq{
+            flex: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+
+            }
+        }
+    }
+    .fixed{
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        img{
+            width: 70px;
+            height: 70px
+        }
+    }
+}
+
+/*!----MAIN-LACARTA----*/
+.la-carta{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .carta{
+        width: 90%;
+        border: 2px solid black;
+        padding: 40px;
+    }
+}
+
+/*!----MAIN-QUIENESSOMOS----*/
+main{
+    .quienessomos{
+        display: flex;
+        height: 90vh;
+        .izquierda{
+            flex: 1;
+            background-image: url(../img/quienes-somos1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+
+            }
+        }
+        .derecha{
+            flex: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            p{
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+    }
+    .quienessomos1{
+        display: flex;
+        height: 90vh;
+        .izquierda1{
+            flex: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            p{
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+            ul{
+                li{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .derecha1{
+            flex: 1;
+            background-image: url(../img/quienes-somos3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+
+            }
+        }
+    }
+    .quienessomos2{
+        display: flex;
+        height: 90vh;
+        .izquierda2{
+            flex: 1;
+            background-image: url(../img/quienes-somos2.JPG);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+
+            }
+        }
+        .derecha2{
+            flex: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            p{
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+            a{
+                border: 2px solid #C6951A;
+                color: #C6951A;
+                border-radius: 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 10px;
+                &:hover{
+                    background-color: #C6951A;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+/*!----MAIN-CONTACTO----*/
+main{
+    form{
+        padding: 80px;
+        h3{
+
+        }
+        p{
+
+        }
+        .grid{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "nombre apellido mail"
+            "telefono pais ."
+            "comentarios comentarios comentarios"
+            ;
+            .nombre{
+                grid-area: nombre; 
+            }
+            .apellido{
+                grid-area: apellido;
+            }
+            .mail{
+                grid-area: mail;
+            }
+            .telefono{
+                grid-area: telefono;
+            }
+            .pais{
+                grid-area: pais;
+            }
+            .comentarios{
+                grid-area: comentarios;
+            }
+            .mb-3{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+        .boton{
+            display: flex;
+            justify-content: center;
+            button{
+                border: 2px solid #C6951A;
+                color: #C6951A;
+                border-radius: 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 10px;
+                &:hover{
+                    background-color: #C6951A;
+                    color: white;
+                }
+            }
+        }
+    }
+}

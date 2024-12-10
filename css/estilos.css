@@ -1,3 +1,48 @@
+@charset "UTF-8";
+/*--SEPARADOR--*/
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+.separador {
+  color: white;
+  font-size: 30px;
+  background-color: #C6951A;
+  text-align: center;
+  padding: 50px;
+}
+
+.separador a {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+/*----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poiret One", sans-serif;
+}
+
+/*--SEPARADOR--*/
+.separador {
+  color: white;
+  font-size: 30px;
+  background-color: #C6951A;
+  text-align: center;
+  padding: 50px;
+}
+
+.separador a {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
 header {
   background-color: #213B30;
   padding: 15px;
@@ -35,6 +80,435 @@ header nav .dropdown button .btn:hover {
 }
 header nav .dropdown button .dropdown-menu {
   background-color: #213B30;
+}
+
+/*!----MAIN-INDEX----*/
+main .hero .carousel {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  height: 100vh;
+  overflow: hidden;
+}
+main .hero .carousel .carousel-inner {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+main .hero .carousel .carousel-inner .carousel-item {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  height: 100vh;
+  overflow: hidden;
+}
+main .hero .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .hero .carousel .carousel-control-prev {
+  z-index: 1;
+}
+main .hero .carousel .carousel-control-next {
+  z-index: 1;
+}
+main .vercarta {
+  height: auto; /* Permite ajustar la altura según el contenido */
+  min-height: 80vh; /* Asegura que tenga al menos el 80% de la altura de la pantalla */
+  background-color: #213B30;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  overflow: hidden; /* Evita desbordamientos */
+  padding: 20px;
+}
+main .vercarta .owl-container {
+  width: 100%;
+  max-width: 100%; /* o 1200px PROBAR */
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .vercarta .owl-container .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+main .vercarta .owl-container .item img {
+  width: 100%; /* Ajusta al ancho del contenedor */
+  max-width: 300px; /* Evita que sea más grande de lo necesario */
+  height: auto; /* Mantén la proporción de la imagen */
+  border-radius: 10px;
+  object-fit: cover;
+}
+main .vercarta div a {
+  border: 2px solid #C6951A;
+  color: #C6951A;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+main .vercarta div a:hover {
+  background-color: #C6951A;
+  color: #213B30;
+}
+main .reserva {
+  display: flex;
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  min-height: 80vh;
+}
+main .reserva div {
+  height: 100px;
+  width: 50%;
+}
+main .reserva div h3 {
+  font-size: 25px;
+}
+main .reserva div p {
+  font-size: 20px;
+}
+main .reserva div {
+  height: 100px;
+  width: 50%;
+}
+main .reserva div a {
+  border: 2px solid #C6951A;
+  color: #C6951A;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+main .reserva div a:hover {
+  background-color: #C6951A;
+  color: white;
+}
+main .direccion {
+  height: 90vh;
+  display: flex;
+}
+main .direccion .izquierdad {
+  flex: 1;
+  background-color: #213B30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .direccion .izquierdad p {
+  font-size: 20px;
+  color: #C6951A;
+}
+main .direccion .izquierdad iframe {
+  margin: 10px;
+}
+main .direccion .derechad {
+  flex: 1;
+  background-image: url(../img/ubicacion-index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .direccion .derechad p {
+  font-size: 20px;
+}
+main .quienessomosi {
+  height: 90vh;
+  display: flex;
+}
+main .quienessomosi .izquierdaq {
+  flex: 1;
+  background-image: url(../img/quienes-somos-index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .quienessomosi .izquierdaq p {
+  font-size: 20px;
+  color: white;
+}
+main .quienessomosi .izquierdaq a {
+  border: 2px solid #213B30;
+  color: #213B30;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  background-color: #C6951A;
+}
+main .quienessomosi .izquierdaq a:hover {
+  background-color: white;
+  color: #C6951A;
+}
+main .quienessomosi .derechaq {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .fixed {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+main .fixed img {
+  width: 70px;
+  height: 70px;
+}
+
+/*!----MAIN-LACARTA----*/
+.la-carta {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.la-carta .carta {
+  width: 90%;
+  border: 2px solid black;
+  padding: 40px;
+}
+
+/*!----MAIN-QUIENESSOMOS----*/
+main .quienessomos {
+  display: flex;
+  height: 90vh;
+}
+main .quienessomos .izquierda {
+  flex: 1;
+  background-image: url(../img/quienes-somos1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .quienessomos .derecha {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+main .quienessomos .derecha p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+main .quienessomos1 {
+  display: flex;
+  height: 90vh;
+}
+main .quienessomos1 .izquierda1 {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+main .quienessomos1 .izquierda1 p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+main .quienessomos1 .izquierda1 ul li a {
+  text-decoration: none;
+  color: black;
+}
+main .quienessomos1 .derecha1 {
+  flex: 1;
+  background-image: url(../img/quienes-somos3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .quienessomos2 {
+  display: flex;
+  height: 90vh;
+}
+main .quienessomos2 .izquierda2 {
+  flex: 1;
+  background-image: url(../img/quienes-somos2.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .quienessomos2 .derecha2 {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+main .quienessomos2 .derecha2 p {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+main .quienessomos2 .derecha2 a {
+  border: 2px solid #C6951A;
+  color: #C6951A;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+main .quienessomos2 .derecha2 a:hover {
+  background-color: #C6951A;
+  color: white;
+}
+
+/*!----MAIN-CONTACTO----*/
+main form {
+  padding: 80px;
+}
+main form .grid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "nombre apellido mail" "telefono pais ." "comentarios comentarios comentarios";
+}
+main form .grid .nombre {
+  grid-area: nombre;
+}
+main form .grid .apellido {
+  grid-area: apellido;
+}
+main form .grid .mail {
+  grid-area: mail;
+}
+main form .grid .telefono {
+  grid-area: telefono;
+}
+main form .grid .pais {
+  grid-area: pais;
+}
+main form .grid .comentarios {
+  grid-area: comentarios;
+}
+main form .grid .mb-3 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+main form .boton {
+  display: flex;
+  justify-content: center;
+}
+main form .boton button {
+  border: 2px solid #C6951A;
+  color: #C6951A;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+main form .boton button:hover {
+  background-color: #C6951A;
+  color: white;
+}
+
+footer {
+  background-color: #213B30;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer img {
+  width: 150px;
+  height: 150px;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer div h3 {
+  color: #C6951A;
+}
+footer div div {
+  display: flex;
+  flex-direction: row;
+}
+footer div div img {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+}
+footer div div a {
+  text-decoration: none;
+  color: #C6951A;
+  font-size: 17px;
+  padding-left: 10px;
+}
+footer a img {
+  width: 70px;
+  height: 70px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
