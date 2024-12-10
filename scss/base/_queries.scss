@@ -1,0 +1,288 @@
+@media screen and (max-width: 1350px) {
+    main{
+        .quienessomos{
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width: 1172px) {
+    main{
+        .hero{
+            width: 100%;
+            overflow: hidden;
+            }
+        .vercarta{
+            .owl-container{
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        form{
+            .grid{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-areas: 
+                "nombre apellido"
+                "mail telefono"
+                "pais ."
+                "comentarios comentarios"
+                ;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1150px) {
+    main{
+        .direccion{
+            .izquierdad{
+                iframe{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    header{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    main{
+        .vercarta{
+            padding: 10px;
+            .owl-container{
+                .item{
+                    img {
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+        .reserva{
+            div{
+                width: 80%;
+            }
+        }
+        .quienessomos1{
+            flex-direction:column-reverse;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        align-items: center;
+        padding: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        nav{
+            ul{
+                display: none;
+            }
+            .dropdown{
+                display: block;
+            }
+        }
+    }
+    main{
+        .hero{
+            height: 60vh;
+        }
+        .vercarta{
+            min-height: 60vh;
+            .owl-container{
+                .item{
+                    padding: 10px;
+                    img{
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+        .reserva{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            gap: 20px;
+            div{
+                h3{
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 1.5;
+                    max-width: 100%;
+                    margin: 0 0 10px 0;
+                }
+            }
+            div{
+                a{
+                    margin-top: 100px ;   
+                }
+            }
+        }
+        .quienessomosi{
+            .derechaq{
+                display: none;
+            }
+            .izquierdaq{
+                flex: 1 1 100%;
+                width: 100%;
+            }
+        }
+        .quienessomos{
+            .derecha{
+                p{
+                    padding: 10px;
+                    font-size: 16px;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .quienessomos1{
+            .izquierda1{
+                p{
+                    padding: 10px;
+                    font-size: 16px;
+                    line-height: 1.4;
+                }
+                ul{
+                    li{
+                        a{
+                            padding: 10px;
+                            font-size: 16px;
+                            line-height: 1.4;
+                        }
+                    }
+                }
+            }
+        }
+        .quienessomos2{
+            .derecha2{
+                p{
+                    padding: 10px;
+                    font-size: 16px;
+                    line-height: 1.4;
+                }
+            }
+        }
+        form{
+            padding: 40px;
+            .grid{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-areas: 
+                "nombre"
+                "apellido"
+                "mail"
+                "telefono"
+                "pais"
+                "comentarios"
+                ;
+            }
+        }
+    }
+}
+@media screen and (max-width: 582px) {
+    main{
+        .quienessomos2{
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    header{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    main{
+        .vercarta{
+            padding: 5px;
+            .owl-container{
+                .item{
+                    img{
+                        max-width: 100px;
+                    }
+                }
+            }
+        }
+        .reserva{
+            div{
+                width: 100%;
+                a{
+                    margin-top: 130px ;   
+                }
+            }
+        }
+        .direccion{
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        .quienessomosi{
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        .fixed{
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .la-carta{
+        .carta{
+            padding: 20px;
+        }
+    }
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+@media screen and (max-width:450px){
+    .la-carta{
+        .carta{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    }
+    main{
+        form{
+            padding: 10px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    main{
+        .hero{
+            .slogan{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    main{
+        .hero{
+            .slogan{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

@@ -598,8 +598,6 @@ form div button:hover{
     .reserva div {
         width: 80%;
     }
-}
-@media screen and (max-width: 992px) {
     .quienessomos1 {
         flex-direction:column-reverse;
     }
@@ -753,9 +751,6 @@ form div button:hover{
     .carta{
         border: 2px solid black;
         padding: 10px;
-    }
-    footer {
-        flex-direction: column;
     }
 
     form{

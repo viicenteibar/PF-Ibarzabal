@@ -1,6 +1,12 @@
 /*!----MAIN-INDEX----*/
 main{
     .hero{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
         .carousel {
             margin: 0;
             padding: 0;
@@ -34,6 +40,14 @@ main{
             .carousel-control-next{
                 z-index: 1;
             }
+        }
+        .slogan{
+            position: absolute;
+            color: black;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            z-index: 2;
         }
     }
     .vercarta{

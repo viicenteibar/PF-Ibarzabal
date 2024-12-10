@@ -1,16 +1,28 @@
-/*--SEPARADOR--*/
+//* VARIABLES
+$color-1: #213B30;
+$color-2: #C6951A;
+$color-3: black;
+$color-4: white;
 
-.separador {
-    color: white;
-    font-size: 30px;
-    background-color: #C6951A;
-    text-align: center;
-    padding: 50px;
+//* LISTAS
+
+//* OPERACIONES
+
+//* MAPAS
+
+//* EXTEND clase SASS II
+%boton1{
+
+}
+%boton2{
+
+}
+%boton3{
+
 }
 
-.separador a{
-    background-color: black;
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
+//* MIXIN clase SASS II
+
+
+
+//* SEPARADOR

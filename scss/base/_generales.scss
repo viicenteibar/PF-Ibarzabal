@@ -14,16 +14,16 @@ body{
 /*--SEPARADOR--*/
 
 .separador {
-    color: white;
+    color: $color-4;
     font-size: 30px;
-    background-color: #C6951A;
+    background-color: $color-2;
     text-align: center;
     padding: 50px;
 }
 
 .separador a{
-    background-color: black;
+    background-color: $color-3;
     text-decoration: none;
-    color: white;
+    color: $color-4;
     padding: 10px;
 }
