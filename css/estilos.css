@@ -10,10 +10,12 @@ main .vercarta div a {
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
+  transition: 0.5s;
 }
 main .vercarta div a:hover {
   background-color: #C6951A;
   color: #213B30;
+  transform: scale(1.2);
 }
 
 main form .boton button, main .quienessomos2 .derecha2 a, main .reserva div a {
@@ -26,10 +28,12 @@ main form .boton button, main .quienessomos2 .derecha2 a, main .reserva div a {
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
+  transition: 0.5s;
 }
 main form .boton button:hover, main .quienessomos2 .derecha2 a:hover, main .reserva div a:hover {
   background-color: #C6951A;
   color: white;
+  transform: scale(1.2);
 }
 
 main .quienessomosi .izquierdaq a {
@@ -43,10 +47,12 @@ main .quienessomosi .izquierdaq a {
   font-family: Arial, sans-serif;
   border-radius: 5px;
   background-color: #C6951A;
+  transition: 0.5s;
 }
 main .quienessomosi .izquierdaq a:hover {
   background-color: white;
   color: #C6951A;
+  transform: scale(1.2);
 }
 
 /*----*/

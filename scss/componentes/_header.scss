@@ -1,11 +1,11 @@
 header{
-    background-color: #213B30;
+    background-color: $color-1;
     padding: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
     h1{
-        color: white;
+        color: $color-4;
         font-weight: bold;
         font-size: 50px;
     }
@@ -16,11 +16,11 @@ header{
                 margin: 10px 5px 10px 5px;/*--del bolde hacia afuera--*/
                 a{
                     text-decoration: none;
-                    color: #C6951A;
+                    color: $color-2;
                     font-weight: 700;
                     font-size: 20px;
                     &:hover{
-                        color: white;
+                        color: $color-4;
                     }
                 }
             }
@@ -28,14 +28,14 @@ header{
     .dropdown{
         display: none;
         .btn{
-                color:#C6951A;
-                background-color: #213B30;
+                color:$color-2;
+                background-color: $color-1;
                 &:hover{
-                    background-color: #213B30;
+                    background-color: $color-1;
             }
         }
         .dropdown-menu{
-            background-color: #213B30;
+            background-color: $color-1;
             }
     }
     }

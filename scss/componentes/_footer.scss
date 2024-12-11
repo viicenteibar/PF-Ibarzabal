@@ -1,5 +1,5 @@
 footer{
-    background-color: #213B30;
+    background-color: $color-1;
     height: 200px;
     display: flex;
     justify-content: space-evenly;
@@ -16,7 +16,7 @@ footer{
         align-items: center;
         text-align: center;
         h3{
-            color: #C6951A;
+            color: $color-2;
         }
         div{
             display: flex;
@@ -28,7 +28,7 @@ footer{
             }
             a{
                 text-decoration: none;
-                color:#C6951A;
+                color: $color-2;
                 font-size: 17px;
                 padding-left: 10px;
             }
