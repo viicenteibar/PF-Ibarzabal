@@ -19,6 +19,7 @@ header{
                     color: $color-2;
                     font-weight: 700;
                     font-size: 20px;
+                    transition: 0.5s;
                     &:hover{
                         color: $color-4;
                     }

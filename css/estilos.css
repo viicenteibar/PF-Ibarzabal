@@ -103,6 +103,7 @@ header nav ul li a {
   color: #C6951A;
   font-weight: 700;
   font-size: 20px;
+  transition: 0.5s;
 }
 header nav ul li a:hover {
   color: white;
@@ -301,6 +302,10 @@ main .fixed {
   position: fixed;
   bottom: 25px;
   right: 25px;
+  transition: 0.5s;
+}
+main .fixed:hover {
+  transform: scale(1.1);
 }
 main .fixed img {
   width: 70px;
@@ -486,6 +491,10 @@ footer div div a {
 footer a img {
   width: 70px;
   height: 70px;
+  transition: 0.5s;
+}
+footer a img:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1350px) {

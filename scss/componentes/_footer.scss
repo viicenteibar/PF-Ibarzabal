@@ -38,6 +38,10 @@ footer{
         img{
             width: 70px;
             height: 70px;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
     }
 }
