@@ -55,10 +55,10 @@ main .quienessomosi .izquierdaq a:hover {
   transform: scale(1.2);
 }
 
-main .vercarta .owl-container .owl-carousel .item {
+main .vercarta .owl-contenedor .owl-carrusel .card {
   transition: 0.5s;
 }
-main .vercarta .owl-container .owl-carousel .item:hover {
+main .vercarta .owl-contenedor .owl-carrusel .card:hover {
   transform: scale(1.03);
   box-shadow: -2px 10px 21px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -2px 10px 21px 0px rgba(0, 0, 0, 0.75);
@@ -196,7 +196,7 @@ main .vercarta {
   overflow: hidden; /* Evita desbordamientos */
   padding: 20px;
 }
-main .vercarta .owl-container {
+main .vercarta .owl-contenedor {
   width: 100%;
   max-width: 100%;
   padding: 20px;
@@ -204,7 +204,7 @@ main .vercarta .owl-container {
   justify-content: center;
   align-items: center;
 }
-main .vercarta .owl-container .owl-carousel {
+main .vercarta .owl-contenedor .owl-carrusel {
   width: 100%;
   max-width: 100%;
   padding: 20px;
@@ -214,7 +214,7 @@ main .vercarta .owl-container .owl-carousel {
   align-items: center;
   transition: 1s;
 }
-main .vercarta .owl-container .owl-carousel .item {
+main .vercarta .owl-contenedor .owl-carrusel .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +228,7 @@ main .vercarta .owl-container .owl-carousel .item {
   height: 510px;
   overflow: hidden;
 }
-main .vercarta .owl-container .owl-carousel .item img {
+main .vercarta .owl-contenedor .owl-carrusel .card img {
   width: 100%; /* Ajusta al ancho del contenedor */
   max-width: 300px; /* Evita que sea más grande de lo necesario */
   height: auto; /* Mantén la proporción de la imagen */
