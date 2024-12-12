@@ -11,12 +11,6 @@
             width: 100%;
             overflow: hidden;
             }
-        .vercarta{
-            .owl-container{
-                width: 100%;
-                margin: 0 auto;
-            }
-        }
         form{
             .grid{
                 padding-top: 20px;
@@ -52,16 +46,6 @@
         }
     }
     main{
-        .vercarta{
-            padding: 10px;
-            .owl-container{
-                .item{
-                    img {
-                        max-width: 200px;
-                    }
-                }
-            }
-        }
         .reserva{
             div{
                 width: 80%;
@@ -90,17 +74,6 @@
     main{
         .hero{
             height: 60vh;
-        }
-        .vercarta{
-            min-height: 60vh;
-            .owl-container{
-                .item{
-                    padding: 10px;
-                    img{
-                        max-width: 150px;
-                    }
-                }
-            }
         }
         .reserva{
             display: flex;
@@ -198,6 +171,22 @@
         .quienessomos2{
             flex-direction: column;
         }
+        .hero{
+            height: 60vh;
+        }
+    }
+}
+@media screen and (max-width: 515px) {
+    main{
+        .vercarta{
+            min-height: 60vh;
+            .owl-container{
+                .item{
+                    width: 360px;
+                    height: 490px; 
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 480px) {
@@ -207,16 +196,6 @@
         }
     }
     main{
-        .vercarta{
-            padding: 5px;
-            .owl-container{
-                .item{
-                    img{
-                        max-width: 100px;
-                    }
-                }
-            }
-        }
         .reserva{
             div{
                 width: 100%;
@@ -265,6 +244,26 @@
     main{
         form{
             padding: 10px;
+        }
+        .vercarta{
+            .owl-container{
+                .item{
+                    width: 300px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:450px){
+    main{
+        .vercarta{
+            .owl-container{
+                .item{
+                    width: 270px;
+                    height: 400px;
+                }
+            }
         }
     }
 }

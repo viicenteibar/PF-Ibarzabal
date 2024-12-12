@@ -27,6 +27,7 @@ main{
                     width: 100% !important;
                     height: 100vh;
                     overflow: hidden;
+                    transition: 1s;
                     img{
                         width: 100%;
                         height: 100%;
@@ -63,32 +64,42 @@ main{
         padding: 20px;
         .owl-container{
             width: 100%;
-            max-width: 100%; /* o 1200px PROBAR */
+            max-width: 100%;
             padding: 20px;
             height: 100%;
-            display: flex;
             justify-content: center;
             align-items: center;
-            .item{
+            .owl-carousel{
+                width: 100%;
+                max-width: 100%;
+                padding: 20px;
+                height: 100%;
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background-color: gainsboro;
-                border-radius: 10px;
-                padding: 20px;
-                margin: 10px;
-                text-align: center;
-                width: 100%;
-                height: auto; 
-                overflow: hidden;
-                img{
-                    width: 100%; /* Ajusta al ancho del contenedor */
-                    max-width: 300px; /* Evita que sea más grande de lo necesario */
-                    height: auto; /* Mantén la proporción de la imagen */
+                transition: 1s;
+                .item{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: gainsboro;
                     border-radius: 10px;
-                    object-fit: cover;
-                }
+                    padding: 20px;
+                    margin: 10px;
+                    text-align: center;
+                    width: 420px;
+                    height: 510px; 
+                    overflow: hidden;
+                    @extend %sombraitem;
+                    img{
+                        width: 100%; /* Ajusta al ancho del contenedor */
+                        max-width: 300px; /* Evita que sea más grande de lo necesario */
+                        height: auto; /* Mantén la proporción de la imagen */
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+            }
             }
         }
         div{

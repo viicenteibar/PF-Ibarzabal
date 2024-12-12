@@ -55,6 +55,16 @@ main .quienessomosi .izquierdaq a:hover {
   transform: scale(1.2);
 }
 
+main .vercarta .owl-container .owl-carousel .item {
+  transition: 0.5s;
+}
+main .vercarta .owl-container .owl-carousel .item:hover {
+  transform: scale(1.03);
+  box-shadow: -2px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 10px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
 /*----*/
 * {
   margin: 0;
@@ -153,6 +163,7 @@ main .hero .carousel .carousel-inner .carousel-item {
   width: 100% !important;
   height: 100vh;
   overflow: hidden;
+  transition: 1s;
 }
 main .hero .carousel .carousel-inner .carousel-item img {
   width: 100%;
@@ -187,14 +198,23 @@ main .vercarta {
 }
 main .vercarta .owl-container {
   width: 100%;
-  max-width: 100%; /* o 1200px PROBAR */
+  max-width: 100%;
+  padding: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+main .vercarta .owl-container .owl-carousel {
+  width: 100%;
+  max-width: 100%;
   padding: 20px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
-main .vercarta .owl-container .item {
+main .vercarta .owl-container .owl-carousel .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,11 +224,11 @@ main .vercarta .owl-container .item {
   padding: 20px;
   margin: 10px;
   text-align: center;
-  width: 100%;
-  height: auto;
+  width: 420px;
+  height: 510px;
   overflow: hidden;
 }
-main .vercarta .owl-container .item img {
+main .vercarta .owl-container .owl-carousel .item img {
   width: 100%; /* Ajusta al ancho del contenedor */
   max-width: 300px; /* Evita que sea más grande de lo necesario */
   height: auto; /* Mantén la proporción de la imagen */
@@ -507,10 +527,6 @@ footer a img:hover {
     width: 100%;
     overflow: hidden;
   }
-  main .vercarta .owl-container {
-    width: 100%;
-    margin: 0 auto;
-  }
   main form .grid {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -528,12 +544,6 @@ footer a img:hover {
 @media screen and (max-width: 992px) {
   header h1 {
     font-size: 2.5rem;
-  }
-  main .vercarta {
-    padding: 10px;
-  }
-  main .vercarta .owl-container .item img {
-    max-width: 200px;
   }
   main .reserva div {
     width: 80%;
@@ -557,15 +567,6 @@ footer a img:hover {
   }
   main .hero {
     height: 60vh;
-  }
-  main .vercarta {
-    min-height: 60vh;
-  }
-  main .vercarta .owl-container .item {
-    padding: 10px;
-  }
-  main .vercarta .owl-container .item img {
-    max-width: 150px;
   }
   main .reserva {
     display: flex;
@@ -632,16 +633,22 @@ footer a img:hover {
   main .quienessomos2 {
     flex-direction: column;
   }
+  main .hero {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 515px) {
+  main .vercarta {
+    min-height: 60vh;
+  }
+  main .vercarta .owl-container .item {
+    width: 360px;
+    height: 490px;
+  }
 }
 @media screen and (max-width: 480px) {
   header h1 {
     font-size: 2rem;
-  }
-  main .vercarta {
-    padding: 5px;
-  }
-  main .vercarta .owl-container .item img {
-    max-width: 100px;
   }
   main .reserva div {
     width: 100%;
@@ -681,6 +688,16 @@ footer a img:hover {
   }
   main form {
     padding: 10px;
+  }
+  main .vercarta .owl-container .item {
+    width: 300px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .vercarta .owl-container .item {
+    width: 270px;
+    height: 400px;
   }
 }
 @media (max-width: 768px) {
