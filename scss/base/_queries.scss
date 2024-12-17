@@ -176,19 +176,7 @@
         }
     }
 }
-@media screen and (max-width: 515px) {
-    main{
-        .vercarta{
-            min-height: 60vh;
-            .owl-container{
-                .item{
-                    width: 360px;
-                    height: 490px; 
-                }
-            }
-        }
-    }
-}
+
 @media screen and (max-width: 480px) {
     header{
         h1{
@@ -244,26 +232,6 @@
     main{
         form{
             padding: 10px;
-        }
-        .vercarta{
-            .owl-container{
-                .item{
-                    width: 300px;
-                    height: 450px;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width:450px){
-    main{
-        .vercarta{
-            .owl-container{
-                .item{
-                    width: 270px;
-                    height: 400px;
-                }
-            }
         }
     }
 }
