@@ -1,9 +1,11 @@
-//* VARIABLES clase SASS I
+//* VARIABLES
 $color-1: #213B30;
 $color-2: #C6951A;
 $color-3: black;
 $color-4: white;
 
+//* LISTAS
+$font-size: 50px, 40px, 30px, 20px, 18px, 14px, 12px;
 
 //* EXTEND
 %boton1{
@@ -69,3 +71,11 @@ $color-4: white;
     }
 }
 
+//* MIXIN
+@mixin flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// @include flex(flex, space-evenly, center)

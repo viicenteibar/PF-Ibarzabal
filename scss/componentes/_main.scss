@@ -2,9 +2,7 @@
 main{
     .hero{
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex,center,center);
         text-align: center;
         z-index: 1;
         .carousel {
@@ -45,7 +43,7 @@ main{
         .slogan{
             position: absolute;
             color: $color-3;
-            font-size: 2.5rem;
+            font-size: nth($font-size, 2 );
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
             z-index: 2;
@@ -56,10 +54,8 @@ main{
         min-height: 80vh; /* Asegura que tenga al menos el 80% de la altura de la pantalla */
         background-color: $color-1;
         text-align: center;
-        display: flex;
+        @include flex(flex,center,center);
         flex-direction: column;
-        justify-content: center; /* Centra verticalmente */
-        align-items: center; /* Centra horizontalmente */
         overflow: hidden; /* Evita desbordamientos */
         padding: 20px;
         
@@ -79,6 +75,9 @@ main{
                         height: auto; /* Mantén la proporción de la imagen */
                         border-radius: 10px;
                         object-fit: cover;
+                    }
+                    p{
+                        font-size: nth($font-size, 4);
                     }
                 }
             }
@@ -111,21 +110,19 @@ main{
     
     
     .reserva{
-        display: flex;
+        @include flex(flex,space-around,center);
         height: 90vh;
-        justify-content: space-around;
-        align-items: center;
         text-align: center;
         padding: 50px;
         min-height: 80vh;
         div{
             height: 100px;
             width: 50%;
-            h3{
-                font-size: 25px;
+            h2{
+                font-size: nth($font-size, 2 );
             }
             p{
-                font-size: 20px;
+                font-size: nth($font-size, 4 );
             }
         }
         div{
@@ -142,16 +139,16 @@ main{
         .izquierdad{
             flex: 1;
             background-color: $color-1;
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            p{
-                font-size: 20px;
+            @include flex(flex,center,center);
+            gap: 40px;
+            h3{
+                font-size: nth($font-size, 3 );
                 color: $color-2;
             }
             iframe{
-                margin: 10px;
+                width: 70%;
+                height: 50%;
             }
         }
         .derechad{
@@ -160,12 +157,10 @@ main{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            p{
-                font-size: 20px;
+            h2{
+                font-size: nth($font-size, 2 );
             }
         }
     }
@@ -178,12 +173,12 @@ main{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            p{
-                font-size: 20px;
+            text-align: center;
+            gap: 40px;
+            h3{
+                font-size: nth($font-size, 3 );
                 color: $color-4;
             }
             a{
@@ -193,13 +188,8 @@ main{
         .derechaq{
             flex: 1;
             background-color: $color-4;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-
-            }
         }
     }
     .fixed{
@@ -223,6 +213,14 @@ main{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    h2{
+        font-size: nth($font-size, 2 );
+
+    }
     .carta{
         width: 90%;
         border: 2px solid black;
@@ -241,23 +239,20 @@ main{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-
+            h2{
+                font-size: nth($font-size, 2 );
             }
         }
         .derecha{
             flex: 1;
             background-color: $color-4;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             font-size: 20px;
             p{
+                font-size: nth($font-size, 4);
                 padding-left: 80px;
                 padding-right: 80px;
             }
@@ -269,12 +264,11 @@ main{
         .izquierda1{
             flex: 1;
             background-color: $color-4;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             font-size: 20px;
             p{
+                font-size: nth($font-size, 4);
                 padding-left: 80px;
                 padding-right: 80px;
             }
@@ -293,12 +287,10 @@ main{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-
+            h2{
+                font-size: nth($font-size, 2 );
             }
         }
     }
@@ -311,23 +303,20 @@ main{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-
+            h2{
+                font-size: nth($font-size, 2 );
             }
         }
         .derecha2{
             flex: 1;
             background-color: $color-4;
-            display: flex;
+            @include flex(flex,center,center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
+            gap: 40px;
             p{
+                font-size: nth($font-size, 4);
                 padding-left: 80px;
                 padding-right: 80px;
             }
@@ -342,12 +331,13 @@ main{
 main{
     form{
         padding: 80px;
+        h2{
+            font-size: nth($font-size, 2 );
+        }
         h3{
-
+            font-size: nth($font-size, 3 );
         }
-        p{
 
-        }
         .grid{
             padding-top: 20px;
             padding-bottom: 20px;
@@ -367,6 +357,9 @@ main{
             }
             .mail{
                 grid-area: mail;
+                .form-text{
+                    font-size: nth($font-size, 5 );
+                }
             }
             .telefono{
                 grid-area: telefono;
@@ -381,6 +374,11 @@ main{
                 padding-left: 40px;
                 padding-right: 40px;
             }
+    
+            label{
+                font-size: nth($font-size , 4);
+            }
+            
         }
         .boton{
             display: flex;

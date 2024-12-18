@@ -79,10 +79,12 @@ body {
 /*--SEPARADOR--*/
 .separador {
   color: white;
-  font-size: 30px;
   background-color: #C6951A;
   text-align: center;
   padding: 50px;
+}
+.separador h2 {
+  font-size: 40px;
 }
 
 .separador a {
@@ -106,7 +108,7 @@ header h1 {
 }
 header nav ul li {
   display: inline-block;
-  margin: 10px 5px 10px 5px; /*--del bolde hacia afuera--*/
+  margin: 10px 5px 10px 5px; /*--del borde hacia afuera--*/
 }
 header nav ul li a {
   text-decoration: none;
@@ -179,7 +181,7 @@ main .hero .carousel .carousel-control-next {
 main .hero .slogan {
   position: absolute;
   color: black;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   z-index: 2;
@@ -190,9 +192,9 @@ main .vercarta {
   background-color: #213B30;
   text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
   overflow: hidden; /* Evita desbordamientos */
   padding: 20px;
 }
@@ -212,6 +214,9 @@ main .vercarta .owl-container .owl-carousel .card img {
   height: auto; /* Mantén la proporción de la imagen */
   border-radius: 10px;
   object-fit: cover;
+}
+main .vercarta .owl-container .owl-carousel .card p {
+  font-size: 20px;
 }
 main .vercarta .owl-container .owl-nav {
   margin-top: 10px;
@@ -234,9 +239,9 @@ main .vercarta div {
 }
 main .reserva {
   display: flex;
-  height: 90vh;
   justify-content: space-around;
   align-items: center;
+  height: 90vh;
   text-align: center;
   padding: 50px;
   min-height: 80vh;
@@ -245,8 +250,8 @@ main .reserva div {
   height: 100px;
   width: 50%;
 }
-main .reserva div h3 {
-  font-size: 25px;
+main .reserva div h2 {
+  font-size: 40px;
 }
 main .reserva div p {
   font-size: 20px;
@@ -262,17 +267,19 @@ main .direccion {
 main .direccion .izquierdad {
   flex: 1;
   background-color: #213B30;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
-main .direccion .izquierdad p {
-  font-size: 20px;
+main .direccion .izquierdad h3 {
+  font-size: 30px;
   color: #C6951A;
 }
 main .direccion .izquierdad iframe {
-  margin: 10px;
+  width: 70%;
+  height: 50%;
 }
 main .direccion .derechad {
   flex: 1;
@@ -281,12 +288,12 @@ main .direccion .derechad {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-main .direccion .derechad p {
-  font-size: 20px;
+main .direccion .derechad h2 {
+  font-size: 40px;
 }
 main .quienessomosi {
   height: 90vh;
@@ -299,21 +306,23 @@ main .quienessomosi .izquierdaq {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
 }
-main .quienessomosi .izquierdaq p {
-  font-size: 20px;
+main .quienessomosi .izquierdaq h3 {
+  font-size: 30px;
   color: white;
 }
 main .quienessomosi .derechaq {
   flex: 1;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 main .fixed {
   position: fixed;
@@ -335,6 +344,13 @@ main .fixed img {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.la-carta h2 {
+  font-size: 40px;
 }
 .la-carta .carta {
   width: 90%;
@@ -354,20 +370,24 @@ main .quienessomos .izquierda {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+main .quienessomos .izquierda h2 {
+  font-size: 40px;
 }
 main .quienessomos .derecha {
   flex: 1;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 20px;
 }
 main .quienessomos .derecha p {
+  font-size: 20px;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -379,12 +399,13 @@ main .quienessomos1 .izquierda1 {
   flex: 1;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 20px;
 }
 main .quienessomos1 .izquierda1 p {
+  font-size: 20px;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -399,9 +420,12 @@ main .quienessomos1 .derecha1 {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+main .quienessomos1 .derecha1 h2 {
+  font-size: 40px;
 }
 main .quienessomos2 {
   display: flex;
@@ -414,26 +438,36 @@ main .quienessomos2 .izquierda2 {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+main .quienessomos2 .izquierda2 h2 {
+  font-size: 40px;
 }
 main .quienessomos2 .derecha2 {
   flex: 1;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  flex-direction: column;
+  gap: 40px;
 }
 main .quienessomos2 .derecha2 p {
+  font-size: 20px;
   padding-left: 80px;
   padding-right: 80px;
 }
 /*!----MAIN-CONTACTO----*/
 main form {
   padding: 80px;
+}
+main form h2 {
+  font-size: 40px;
+}
+main form h3 {
+  font-size: 30px;
 }
 main form .grid {
   padding-top: 20px;
@@ -452,6 +486,9 @@ main form .grid .apellido {
 main form .grid .mail {
   grid-area: mail;
 }
+main form .grid .mail .form-text {
+  font-size: 18px;
+}
 main form .grid .telefono {
   grid-area: telefono;
 }
@@ -464,6 +501,9 @@ main form .grid .comentarios {
 main form .grid .mb-3 {
   padding-left: 40px;
   padding-right: 40px;
+}
+main form .grid label {
+  font-size: 20px;
 }
 main form .boton {
   display: flex;
@@ -482,14 +522,15 @@ footer img {
 }
 footer div {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 footer div h3 {
   color: #C6951A;
+  font-size: 30px;
 }
 footer div div {
   display: flex;
@@ -532,11 +573,6 @@ footer a img:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "nombre apellido" "mail telefono" "pais ." "comentarios comentarios";
-  }
-}
-@media screen and (max-width: 1150px) {
-  main .direccion .izquierdad iframe {
-    width: 90%;
   }
 }
 @media screen and (max-width: 992px) {

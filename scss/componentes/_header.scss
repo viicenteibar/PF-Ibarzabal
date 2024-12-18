@@ -7,18 +7,18 @@ header{
     h1{
         color: $color-4;
         font-weight: bold;
-        font-size: 50px;
+        font-size: nth($font-size, 1);
     }
     nav{
         ul{
             li{
                 display: inline-block;
-                margin: 10px 5px 10px 5px;/*--del bolde hacia afuera--*/
+                margin: 10px 5px 10px 5px;/*--del borde hacia afuera--*/
                 a{
                     text-decoration: none;
                     color: $color-2;
                     font-weight: 700;
-                    font-size: 20px;
+                    font-size: nth($font-size, 4 );
                     transition: 0.5s;
                     &:hover{
                         color: $color-4;
