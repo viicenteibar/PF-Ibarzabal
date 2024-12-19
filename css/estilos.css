@@ -27,7 +27,6 @@ main form .boton button, main .quienessomos2 .derecha2 a, main .reserva div a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 10px;
   transition: 0.5s;
 }
 main form .boton button:hover, main .quienessomos2 .derecha2 a:hover, main .reserva div a:hover {
@@ -44,8 +43,7 @@ main .quienessomosi .izquierdaq a {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-family: Arial, sans-serif;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #C6951A;
   transition: 0.5s;
 }
@@ -293,7 +291,10 @@ main .direccion .derechad {
   flex-direction: column;
 }
 main .direccion .derechad h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-size: 40px;
+  color: white;
 }
 main .quienessomosi {
   height: 90vh;
@@ -313,6 +314,8 @@ main .quienessomosi .izquierdaq {
   gap: 40px;
 }
 main .quienessomosi .izquierdaq h3 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-size: 30px;
   color: white;
 }
@@ -323,6 +326,9 @@ main .quienessomosi .derechaq {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+main .quienessomosi .derechaq h2 {
+  font-size: 40px;
 }
 main .fixed {
   position: fixed;
@@ -375,6 +381,9 @@ main .quienessomos .izquierda {
   flex-direction: column;
 }
 main .quienessomos .izquierda h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
   font-size: 40px;
 }
 main .quienessomos .derecha {
@@ -425,6 +434,9 @@ main .quienessomos1 .derecha1 {
   flex-direction: column;
 }
 main .quienessomos1 .derecha1 h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
   font-size: 40px;
 }
 main .quienessomos2 {
@@ -443,6 +455,9 @@ main .quienessomos2 .izquierda2 {
   flex-direction: column;
 }
 main .quienessomos2 .izquierda2 h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
   font-size: 40px;
 }
 main .quienessomos2 .derecha2 {

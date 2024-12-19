@@ -34,7 +34,6 @@ $font-size: 50px, 40px, 30px, 20px, 18px, 14px, 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 10px;
     transition: 0.5s;
     &:hover{
         background-color: $color-2;
@@ -50,8 +49,7 @@ $font-size: 50px, 40px, 30px, 20px, 18px, 14px, 12px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    font-family: Arial, sans-serif;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: $color-2;
     transition: 0.5s;
     &:hover{
@@ -77,5 +75,3 @@ $font-size: 50px, 40px, 30px, 20px, 18px, 14px, 12px;
     justify-content: $justify;
     align-items: $align;
 }
-
-// @include flex(flex, space-evenly, center)
