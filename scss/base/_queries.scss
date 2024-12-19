@@ -1,6 +1,36 @@
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1824px) {
+    .la-carta{
+        h2{
+            font-size: nth($font-size, 3 );
+        }
+    }
+    main{
+        .direccion{
+            .izquierdad{
+                h3{
+                    font-size: nth($font-size, 4 );
+                }
+            }
+        }
+        .quienessomosi{
+            .izquierdaq{
+                h3{
+                    font-size: nth($font-size, 4 );
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
     main{
         .quienessomos{
+            flex-direction: column;
+        }
+        .quienessomos1{
+            flex-direction:column-reverse;
+        }
+        .quienessomos2{
             flex-direction: column;
         }
     }
@@ -10,7 +40,10 @@
         .hero{
             width: 100%;
             overflow: hidden;
+            .slogan{
+                font-size: nth($font-size, 3 );
             }
+        }
         form{
             .grid{
                 padding-top: 20px;
@@ -27,12 +60,17 @@
             }
         }
     }
+    .la-carta{
+        h2{
+            font-size: nth($font-size, 4);
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
     header{
         h1{
-            font-size: 2.5rem;
+            font-size: nth($font-size, 2 );
         }
     }
     main{
@@ -41,8 +79,33 @@
                 width: 80%;
             }
         }
+        .quienessomos{
+            .derecha{
+                p{
+                    font-size: nth($font-size, 6 );
+                }
+            }
+        }
         .quienessomos1{
-            flex-direction:column-reverse;
+            .izquierda1{
+                p{
+                    font-size: nth($font-size, 6 );
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: nth($font-size, 5 );
+                        }
+                    }
+                }
+            }
+        }
+        .quienessomos2{
+            .derecha2{
+                p{
+                    font-size: nth($font-size, 6 );
+                }
+            }
         }
     }
 }
@@ -156,13 +219,66 @@
         }
     }
 }
+@media screen and (max-width: 736px) {
+    .la-carta{
+        h2{
+            display: none;
+        }
+    }
+}
 @media screen and (max-width: 582px) {
     main{
-        .quienessomos2{
-            flex-direction: column;
-        }
         .hero{
             height: 60vh;
+        }
+        .quienessomos{
+            .izquierda{
+                h2{
+                    font-size: nth($font-size, 3 );
+                }
+            }
+        }
+        .quienessomos1{
+            .derecha1{
+                h2{
+                    font-size: nth($font-size, 3 );
+                }
+            }
+        }
+        .quienessomos2{
+            .izquierda2{
+                h2{
+                    font-size: nth($font-size, 3 );
+                }
+            }
+        }
+        .reserva{
+            div{
+                h2{
+                    font-size: nth($font-size, 4 );
+                }
+                p{
+                    font-size: nth($font-size, 6 );
+                }
+            }
+        }
+        form{
+            h2{
+                font-size: nth($font-size, 4 );
+            }
+            h3{
+                font-size: nth($font-size, 5 );
+            }
+            .grid{
+                label{
+                    font-size: nth($font-size, 6 );
+                }
+                .mail{
+                    .form-text{
+                        font-size: nth($font-size, 6 );
+                    }
+                }
+            }
         }
     }
 }
