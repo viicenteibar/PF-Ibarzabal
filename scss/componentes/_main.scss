@@ -141,6 +141,7 @@ main{
             background-color: $color-1;
             flex-direction: column;
             @include flex(flex,center,center);
+            text-align: center;
             gap: 40px;
             h3{
                 font-size: nth($font-size, 3 );
@@ -221,6 +222,8 @@ main{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,6 +265,7 @@ main{
             @include flex(flex,center,center);
             flex-direction: column;
             font-size: 20px;
+            margin-bottom: 15px;
             p{
                 font-size: nth($font-size, 4);
                 padding-left: 80px;
@@ -278,6 +282,7 @@ main{
             @include flex(flex,center,center);
             flex-direction: column;
             font-size: 20px;
+            padding: 15px;
             p{
                 font-size: nth($font-size, 4);
                 padding-left: 80px;
@@ -319,6 +324,7 @@ main{
             background-size: cover;
             @include flex(flex,center,center);
             flex-direction: column;
+            text-align: center;
             h2{
                 font-weight: bold;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -332,12 +338,14 @@ main{
             @include flex(flex,center,center);
             flex-direction: column;
             gap: 40px;
+            padding: 15px;
             p{
                 font-size: nth($font-size, 4);
                 padding-left: 80px;
                 padding-right: 80px;
             }
             a{
+                
                 @extend %boton2
             }
         }

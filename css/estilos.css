@@ -38,12 +38,18 @@ main form .boton button:hover, main .quienessomos2 .derecha2 a:hover, main .rese
 main .quienessomosi .izquierdaq a {
   border: 2px solid #213B30;
   color: #213B30;
+  background-color: white;
+  border-radius: 10px;
   padding: 10px 20px;
+  font-size: 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+<<<<<<< HEAD
   font-size: 16px;
   border-radius: 10px;
+=======
+>>>>>>> eba02f2f07a2cace42cfec495e5d50490ab0f52f
   background-color: #C6951A;
   transition: 0.5s;
 }
@@ -269,6 +275,7 @@ main .direccion .izquierdad {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 40px;
 }
 main .direccion .izquierdad h3 {
@@ -350,6 +357,8 @@ main .fixed img {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -394,6 +403,7 @@ main .quienessomos .derecha {
   align-items: center;
   flex-direction: column;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 main .quienessomos .derecha p {
   font-size: 20px;
@@ -412,6 +422,7 @@ main .quienessomos1 .izquierda1 {
   align-items: center;
   flex-direction: column;
   font-size: 20px;
+  padding: 15px;
 }
 main .quienessomos1 .izquierda1 p {
   font-size: 20px;
@@ -453,6 +464,7 @@ main .quienessomos2 .izquierda2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 main .quienessomos2 .izquierda2 h2 {
   font-weight: bold;
@@ -468,6 +480,7 @@ main .quienessomos2 .derecha2 {
   align-items: center;
   flex-direction: column;
   gap: 40px;
+  padding: 15px;
 }
 main .quienessomos2 .derecha2 p {
   font-size: 20px;
@@ -561,6 +574,10 @@ footer div div a {
   color: #C6951A;
   font-size: 17px;
   padding-left: 10px;
+  transition: 0.5s;
+}
+footer div div a:hover {
+  color: white;
 }
 footer a img {
   width: 70px;
@@ -571,8 +588,25 @@ footer a img:hover {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1824px) {
+  .la-carta h2 {
+    font-size: 30px;
+  }
+  main .direccion .izquierdad h3 {
+    font-size: 20px;
+  }
+  main .quienessomosi .izquierdaq h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1366px) {
   main .quienessomos {
+    flex-direction: column;
+  }
+  main .quienessomos1 {
+    flex-direction: column-reverse;
+  }
+  main .quienessomos2 {
     flex-direction: column;
   }
 }
@@ -580,6 +614,9 @@ footer a img:hover {
   main .hero {
     width: 100%;
     overflow: hidden;
+  }
+  main .hero .slogan {
+    font-size: 30px;
   }
   main form .grid {
     padding-top: 20px;
@@ -589,16 +626,28 @@ footer a img:hover {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "nombre apellido" "mail telefono" "pais ." "comentarios comentarios";
   }
+  .la-carta h2 {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 992px) {
   header h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
   main .reserva div {
     width: 80%;
   }
-  main .quienessomos1 {
-    flex-direction: column-reverse;
+  main .quienessomos .derecha p {
+    font-size: 14px;
+  }
+  main .quienessomos1 .izquierda1 p {
+    font-size: 14px;
+  }
+  main .quienessomos1 .izquierda1 ul li a {
+    font-size: 18px;
+  }
+  main .quienessomos2 .derecha2 p {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -678,12 +727,41 @@ footer a img:hover {
     grid-template-areas: "nombre" "apellido" "mail" "telefono" "pais" "comentarios";
   }
 }
-@media screen and (max-width: 582px) {
-  main .quienessomos2 {
-    flex-direction: column;
+@media screen and (max-width: 736px) {
+  .la-carta h2 {
+    display: none;
   }
+}
+@media screen and (max-width: 582px) {
   main .hero {
     height: 60vh;
+  }
+  main .quienessomos .izquierda h2 {
+    font-size: 30px;
+  }
+  main .quienessomos1 .derecha1 h2 {
+    font-size: 30px;
+  }
+  main .quienessomos2 .izquierda2 h2 {
+    font-size: 30px;
+  }
+  main .reserva div h2 {
+    font-size: 20px;
+  }
+  main .reserva div p {
+    font-size: 14px;
+  }
+  main form h2 {
+    font-size: 20px;
+  }
+  main form h3 {
+    font-size: 18px;
+  }
+  main form .grid label {
+    font-size: 14px;
+  }
+  main form .grid .mail .form-text {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
