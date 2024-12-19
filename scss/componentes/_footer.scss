@@ -28,6 +28,10 @@ footer{
                 color: $color-2;
                 font-size: 17px;
                 padding-left: 10px;
+                transition: 0.5s;
+                &:hover{
+                    color: $color-4;
+                }
             }
         }
     }

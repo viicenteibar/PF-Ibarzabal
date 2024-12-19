@@ -38,6 +38,7 @@ main form .boton button:hover, main .quienessomos2 .derecha2 a:hover, main .rese
 main .quienessomosi .izquierdaq a {
   border: 2px solid #213B30;
   color: #213B30;
+  background-color: white;
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 16px;
@@ -554,6 +555,10 @@ footer div div a {
   color: #C6951A;
   font-size: 17px;
   padding-left: 10px;
+  transition: 0.5s;
+}
+footer div div a:hover {
+  color: white;
 }
 footer a img {
   width: 70px;
