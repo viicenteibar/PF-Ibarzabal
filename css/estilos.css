@@ -301,10 +301,10 @@ main .direccion .derechad {
   align-items: center;
   flex-direction: column;
 }
-main .direccion .derechad h2 {
+main .direccion .derechad h3 {
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  font-size: 40px;
+  font-size: 30px;
   color: white;
 }
 main .quienessomosi {
