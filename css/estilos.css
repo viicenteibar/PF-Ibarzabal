@@ -21,6 +21,7 @@ main .vercarta div a:hover {
 main form .boton button, main .quienessomos2 .derecha2 a, main .reserva div a {
   border: 2px solid #C6951A;
   color: #C6951A;
+  background-color: transparent;
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 16px;
@@ -694,19 +695,15 @@ footer a img:hover {
     width: 100%;
   }
   main .quienessomos .derecha p {
-    padding: 10px;
     line-height: 1.4;
   }
   main .quienessomos1 .izquierda1 p {
-    padding: 10px;
     line-height: 1.4;
   }
   main .quienessomos1 .izquierda1 ul li a {
-    padding: 10px;
     line-height: 1.4;
   }
   main .quienessomos2 .derecha2 p {
-    padding: 10px;
     line-height: 1.4;
   }
   main form {
