@@ -218,9 +218,11 @@ main{
         &:hover{
             transform: scale(1.1);
         }
-        img{
-            width: 55px;
-            height: 55px
+        a{
+            img{
+                width: 55px;
+                height: 55px;
+            }
         }
     }
 }

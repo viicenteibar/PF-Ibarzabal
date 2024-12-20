@@ -351,7 +351,7 @@ main .fixed {
 main .fixed:hover {
   transform: scale(1.1);
 }
-main .fixed img {
+main .fixed a img {
   width: 55px;
   height: 55px;
 }
@@ -695,15 +695,18 @@ footer a img:hover {
     width: 100%;
   }
   main .quienessomos .derecha p {
+    padding: 10px;
     line-height: 1.4;
   }
   main .quienessomos1 .izquierda1 p {
+    padding: 10px;
     line-height: 1.4;
   }
   main .quienessomos1 .izquierda1 ul li a {
     line-height: 1.4;
   }
   main .quienessomos2 .derecha2 p {
+    padding: 10px;
     line-height: 1.4;
   }
   main form {
@@ -773,7 +776,7 @@ footer a img:hover {
     flex-direction: column-reverse;
     text-align: center;
   }
-  main .fixed img {
+  main .fixed a img {
     width: 45px;
     height: 45px;
   }
