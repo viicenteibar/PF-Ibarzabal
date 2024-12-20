@@ -45,11 +45,6 @@ main .quienessomosi .izquierdaq a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-<<<<<<< HEAD
-  font-size: 16px;
-  border-radius: 10px;
-=======
->>>>>>> eba02f2f07a2cace42cfec495e5d50490ab0f52f
   background-color: #C6951A;
   transition: 0.5s;
 }
@@ -151,7 +146,7 @@ main .hero .carousel {
   margin: 0;
   padding: 0;
   width: 100% !important;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
 main .hero .carousel .carousel-inner {
@@ -204,6 +199,10 @@ main .vercarta {
 }
 main .vercarta .owl-container {
   width: 100%;
+  margin: 0px;
+}
+main .vercarta .owl-container .owl-carousel .owl-stage {
+  margin: 0px;
 }
 main .vercarta .owl-container .owl-carousel .card {
   background-color: gainsboro;
@@ -221,9 +220,10 @@ main .vercarta .owl-container .owl-carousel .card img {
 }
 main .vercarta .owl-container .owl-carousel .card p {
   font-size: 20px;
+  margin: 0px;
 }
 main .vercarta .owl-container .owl-nav {
-  margin-top: 10px;
+  margin: 0px;
   display: flex;
   justify-content: center;
 }
@@ -234,6 +234,9 @@ main .vercarta .owl-container .owl-nav .owl-prev, main .vercarta .owl-container 
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
+}
+main .vercarta .owl-container .owl-nav .owl-prev span, main .vercarta .owl-container .owl-nav .owl-next span {
+  padding: 10px 10px;
 }
 main .vercarta .owl-container .owl-nav .owl-prev:hover, main .vercarta .owl-container .owl-nav .owl-next:hover {
   background-color: gainsboro;
@@ -348,8 +351,8 @@ main .fixed:hover {
   transform: scale(1.1);
 }
 main .fixed img {
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
 }
 
 /*!----MAIN-LACARTA----*/
@@ -368,9 +371,9 @@ main .fixed img {
   font-size: 40px;
 }
 .la-carta .carta {
-  width: 90%;
+  width: 80%;
   border: 2px solid black;
-  padding: 40px;
+  padding: 45px;
 }
 
 /*!----MAIN-QUIENESSOMOS----*/
@@ -783,8 +786,8 @@ footer a img:hover {
     text-align: center;
   }
   main .fixed img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .la-carta .carta {
     padding: 20px;

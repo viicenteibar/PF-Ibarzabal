@@ -7,13 +7,13 @@ $('.owl-carousel').owlCarousel({
         0:{
             items:1
         },
-        925:{
+        430:{
             items:2
         },
-        1400:{
+        817:{
             items:3
         },
-        1850:{
+        1300:{
             items:4
         }
     }

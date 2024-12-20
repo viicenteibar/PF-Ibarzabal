@@ -9,7 +9,7 @@ main{
             margin: 0;
             padding: 0;
             width: 100% !important;
-            height: 100vh;
+            height: 90vh;
             overflow: hidden;
             .carousel-inner{
                 margin: 0;
@@ -61,7 +61,11 @@ main{
         
         .owl-container {
             width: 100%;
+            margin: 0px;
             .owl-carousel { 
+                .owl-stage{
+                    margin: 0px;
+                }
                 .card {
                     background-color: gainsboro;
                     border-radius: 10px;
@@ -78,12 +82,13 @@ main{
                     }
                     p{
                         font-size: nth($font-size, 4);
+                        margin: 0px;
                     }
                 }
             }
             
             .owl-nav {
-                margin-top: 10px;
+                margin: 0px;
                 display: flex;
                 justify-content: center;
                 .owl-prev , .owl-next {
@@ -93,6 +98,9 @@ main{
                     cursor: pointer;
                     border-radius: 5px;
                     transition: background-color 0.3s;
+                    span{
+                        padding: 10px 10px;
+                    }
                     &:hover {
                         background-color: gainsboro;
                     }
@@ -211,8 +219,8 @@ main{
             transform: scale(1.1);
         }
         img{
-            width: 70px;
-            height: 70px
+            width: 55px;
+            height: 55px
         }
     }
 }
@@ -233,9 +241,9 @@ main{
 
     }
     .carta{
-        width: 90%;
+        width: 80%;
         border: 2px solid black;
-        padding: 40px;
+        padding: 45px;
     }
 }
 
