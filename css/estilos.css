@@ -292,7 +292,7 @@ main .direccion .izquierdad iframe {
 }
 main .direccion .derechad {
   flex: 1;
-  background-image: url(../img/ubicacion-index.jpg);
+  background-image: url(../img/ubicacion-index.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -313,7 +313,7 @@ main .quienessomosi {
 }
 main .quienessomosi .izquierdaq {
   flex: 1;
-  background-image: url(../img/quienes-somos-index.jpg);
+  background-image: url(../img/quienes-somos-index.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,7 +384,7 @@ main .quienessomos {
 }
 main .quienessomos .izquierda {
   flex: 1;
-  background-image: url(../img/quienes-somos1.jpg);
+  background-image: url(../img/quienes-somos1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -435,7 +435,7 @@ main .quienessomos1 .izquierda1 ul li a {
 }
 main .quienessomos1 .derecha1 {
   flex: 1;
-  background-image: url(../img/quienes-somos3.jpg);
+  background-image: url(../img/quienes-somos3.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -456,7 +456,7 @@ main .quienessomos2 {
 }
 main .quienessomos2 .izquierda2 {
   flex: 1;
-  background-image: url(../img/quienes-somos2.JPG);
+  background-image: url(../img/quienes-somos2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
